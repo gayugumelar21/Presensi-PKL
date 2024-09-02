@@ -1,0 +1,11 @@
+<IfModule mod_headers.c>
+    Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>
+
+Order Deny,Allow
+Deny from all
+Allow from 103.140.189.174
+Allow from 103.140.189.172
+
+ErrorDocument 403 /error/403.html
+
